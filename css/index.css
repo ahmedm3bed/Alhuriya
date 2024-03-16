@@ -1,0 +1,251 @@
+/* Ahmed Omar */
+*{
+    scroll-behavior: smooth;
+ 
+}
+/* body{   overflow-x:hidden;} */
+.nav-link:hover{
+    color: var(--success)!important;
+}
+.dropdown-toggle{
+    color:black!important;
+}
+.dropdown-toggle:hover{
+ text-decoration: none !important;   
+ color: var(--success) !important;
+}
+.logo {
+    transform: scale(1.58) translate(1px, -2px);
+    margin-left: 16px;
+    /* max-width: 26px; */
+    width: 12vh;
+    /* filter: drop-shadow(0.8px 0 0 black);*/
+}
+.navbar-collapse{
+    margin-left: 11px;
+}
+@media(max-width:991px){
+    .logo{
+        transform: scale(2.2) translate(0px, -2px) !important;
+    }
+}
+.navbar .navbar-nav{
+font-weight: 700;
+}
+.sectionlogo{
+    filter: drop-shadow(2px 2px 0 black);
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+
+.sectionlanding,.sectionlandingproducts{
+    background: rgba(0,0,0,.7)url("../image/home/1.jpg");
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:calc( 100vh - 56px );
+}
+.sectionlandingproducts{
+ 
+    height:calc( 50vh - 56px )!important;
+
+
+}
+.card-art:hover{
+
+    transform: scale(1.07);
+    z-index: 1;
+
+}
+.card-art{
+    transition-duration: .5s;
+}
+.cardprod{
+    position: relative !important;
+    transition-duration: 1s;
+}
+@media (min-width:768px){
+    .cardprod{
+        display: block !important;
+    }
+
+    .cardprod::before{
+        content: "";
+        position: absolute;
+        background:rgba(0,0,0,.5);
+        background-blend-mode: darken;
+        top: 0;
+        width: 100%;
+        height: 0%;
+        transition-duration:.3s ;
+        
+    
+    }
+    .cardprod:hover::before{
+     
+        height: 100%;
+    
+    
+    
+    }
+    .readmore{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        visibility: hidden;
+        opacity: 0%;
+        margin: 0 !important;
+        transition-duration: 2s;
+    }
+    .cardprod:hover .readmore{
+        visibility: visible;
+        opacity: 100%;
+    }
+    .imgprod{
+        width: 100% !important;
+        margin: 0 !important;
+        box-shadow: none  !important;
+        border-radius: 0px !important;
+    }
+    .customsetbody{
+        padding: 0 !important;
+        position: static !important;
+        top: 0 !important;
+    }
+}
+
+
+
+.imgprod{
+    width: 45vw;
+    margin: 20px;
+    box-shadow: 0 0 10px 0;
+    border-radius: 10px;
+}
+.readmore{
+    height: fit-content;
+    margin-top: 12.5%;
+    margin-left: 7.2% ;
+}
+.customsetbody{
+    padding-left: 64vw;
+  
+    top: -44vw;
+    position: relative;
+}
+/*.......................................*/
+.stretch-card>.card {
+    width: 100%;
+    min-width: 100%
+}
+
+body {
+    background-color: #f9f9fa
+}
+
+.flex {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto
+}
+
+@media (max-width:991.98px) {
+    .padding {
+        padding: 1.5rem
+    }
+}
+
+@media (max-width:767.98px) {
+    .padding {
+        padding: 1rem
+    }
+}
+
+.padding {
+    padding: 3rem
+}
+
+
+.owl-carousel .item{
+ margin: 3px;
+}
+.owl-carousel .item img{
+ display: block;
+ width: 100%;
+ height: auto;
+}
+
+.owl-carousel .item {
+   margin: 3px;
+}
+
+.owl-carousel{
+   margin-bottom:15px;
+}
+body{
+    background-color: white !important;
+}
+.cardprods{
+    text-decoration: none !important;
+}
+
+.readmoreprod{
+    color: var(--success) !important;
+}
+.readmoreprod:hover{
+    color: var(--light) !important;
+}
+@media (max-width:767px) {
+    .featuresimgs{
+
+padding: 21vw !important;
+
+    }
+    .featuresimgs0{
+        padding: 19vw !important;
+    }
+
+}
+.whatsappfixedicon{
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    font-size:4vw;
+    color: var(--success);
+}
+.catprod{
+    
+    font-size: 1.3em;
+    font-weight: 700;
+}
+@media(min-width:992px){
+
+
+    .cardright{
+        position: relative;
+        right: 14px;
+    }
+    .cardleft{
+        position: relative;
+        left: 14px;
+    }
+
+}
+@media(max-width:767px){
+    .whatsappfixedicon{
+        font-size: 17vw;
+    }
+}
+@media(min-width:768px) and (max-width:991px){
+    .whatsappfixedicon{
+        font-size: 14vw;
+    }
+}
+@media (min-width:992px) {
+    .list-unstyled li a{
+    white-space: nowrap !important;
+    }
+}
